@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario rut:</strong>
+  <%= @directory.usuario_rut %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @directory.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @directory.descripcion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @directory.telefono %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @directory.celular %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @directory.comuna %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @directory.ciudad %>
+</p>
+
+<%= link_to 'Edit', edit_directory_path(@directory) %> |
+<%= link_to 'Back', directories_path %>

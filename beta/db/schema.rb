@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421143442) do
+ActiveRecord::Schema.define(version: 20150421195451) do
+
+  create_table "directories", force: :cascade do |t|
+    t.string   "usuario_rut", limit: 255
+    t.string   "nombre",      limit: 255
+    t.string   "descripcion", limit: 255
+    t.integer  "telefono",    limit: 4
+    t.integer  "celular",     limit: 4
+    t.string   "comuna",      limit: 255
+    t.string   "ciudad",      limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
   create_table "usuarios", force: :cascade do |t|
     t.string   "rut",        limit: 255
